@@ -1,0 +1,493 @@
+body {
+    background-color: #F0F0F0 !important;
+}
+
+.AquaBidIcon {
+    height: 90%;
+    margin-left: 25px;
+}
+
+.TopBar{
+    background-color: #DDEBFF;
+    width: 100%;
+    height: 120px;
+    position: fixed;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+.accountCircle {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background: #434343;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.accountCircle:hover {
+    background: #999999;
+  }
+
+.accountImage {
+    height: 50px;
+    width: 50px;
+}
+
+.SideBar {
+    margin-top: 120px;
+    padding: 0;
+    width: 312px;
+    background-color: #ffffff;
+    position: fixed;
+    height: 90%;
+    overflow: auto;
+    font-family: Inter;
+    z-index: 1;
+  }
+
+.SearchBar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 33px;
+}
+
+.SearchInput {
+    border-radius: 25px;
+    width:292px;
+    height:32px;
+
+    
+}
+
+input[type="search"] {
+    background-color : #E9E9E9; 
+    border: none;
+    font-size: 20px;
+    font-family: Inter;
+    text-align: center;
+
+    background-image: url("img/searchGlass.png");
+    background-repeat: no-repeat;
+    background-position-x: 7px;
+    background-position-y: center;
+    
+  }
+
+::placeholder {
+    color: #666666;
+  }
+  
+
+
+.CreateNewListing {
+    margin-top: 18px;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.NewListButtonContainer {
+    width: 200px;
+    height: 30px;
+}
+
+.CreateNewListingMobile {
+
+    position: fixed;
+    bottom: 25px;
+    right: 25px; 
+
+    display: none;
+
+}
+
+.OtherElements {
+    margin-top: 50px;
+    font-family: Inter;
+    
+}
+
+.sideIcons {
+    width: 34px;
+}
+
+.iconPair {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.TopOfFishBar {
+    display: flex;
+    align-items: center;
+
+    border-radius: 25px;
+    background-color: white;
+    height: 142px;
+    margin-top: 150px;
+
+}
+
+.textHolder {
+    margin-left: 35px;
+    font-family: 'Inter';
+}
+
+h1 {
+    font-size: 32px;
+}
+
+.NavSubTitle {
+    color: #666666;
+    font-size: 14px;
+}
+
+.linkColor {
+    color: #666666;
+    text-decoration: none;
+}
+
+.SideBar a {
+    color: black;
+    text-decoration: none;
+  }
+
+
+  .iconPair:hover:not(.active) {
+    background-color: E9E9E9;
+  }
+  
+
+.fishElements {
+    margin-left: 312px;
+    padding: 1px 16px;
+    display: block;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .leftSide {
+    width: 100%;
+    display: flex;
+    justify-content:left;
+    align-items: center;
+}
+
+.rightSide {
+    display: none;
+}
+
+
+  .FilterItems {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    font-family: Inter !important;
+  }
+
+  /*actually the left side*/
+  .filterButtonRight {
+    margin-left: 10px;
+  }
+
+
+  .Fish {
+    border-radius: 25px;
+    background-color: white;
+    height: 142px;   
+    margin-top: 10px;
+
+  }
+
+  .Fish:hover {
+    background-color: DDEBFF;
+  }
+
+  .FishFlex {
+    width: 100%;
+    height:100%;
+    display: flex;
+    align-items: center; 
+    justify-content:space-between;
+  }
+
+  .FishScrollDown {
+    border-radius: 25px;
+    background-color: none;
+    height: 142px;   
+    margin-top: 10px;
+
+  }
+
+  .ScrollDown {
+    width: 100%;
+    height:100%;
+    display: flex;
+    align-items: center; 
+    justify-content:center;
+    color: #666666;
+    font-family: Inter;
+  }
+
+  .doubleLeft {
+    display: flex;
+    justify-content:space-between;
+    align-items: center; 
+
+  }
+
+
+.fishImage { 
+    display: inline-block;
+    position: relative; 
+    width: 130px; 
+    height: 130px; 
+    overflow: hidden; 
+    border-radius: 50%;
+    margin-left: 28px; 
+
+    
+    }    
+
+.fishImage img { 
+    width: auto; 
+    height: 100%; 
+    margin-left: -30px; 
+    }
+
+.FishTitle {
+    font-family: 'Inter';
+    margin-left: 26px;
+}
+
+.FishTitleMobile {
+    display: none;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+.SellerField {
+    color: #666666;
+    font-size: 20px;
+}
+
+.fishRightSide {
+    font-family: 'Inter';
+    font-size: 20px;
+    margin-right: 20px;
+    width: 300px;
+   
+    }
+.urgentSale {
+    color: #FF0000;
+}
+
+  
+  @media screen and (max-width: 1300px) {
+    
+
+    .SideBar {
+        width: 100%;
+        height: 130px;
+        z-index: 1;
+      }
+    
+    .SearchBar {
+        margin-top: 10px;
+    }
+    
+    .SearchInput {
+        width:343px;
+    }
+    
+    ::placeholder {
+        color: #666666;
+      }
+      
+    
+    
+    .CreateNewListing {
+        display: none;
+    
+    }
+
+    .CreateNewListingMobile {
+
+        position: fixed;
+        bottom: 25px;
+        right: 25px; 
+    
+        display:block;
+    
+    }
+    
+    .OtherElements {
+        margin-top: 17px;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    .iconPair {
+        margin-top: 0px;
+        width: 24.5%;
+
+    }
+
+    .fishElements {
+        width: 98%;
+        margin-left: 3px;
+        margin-right: 0px;
+
+
+      }
+    
+    .TopOfFishBar {
+        margin-top: 270px;
+    }
+
+    .Fish:hover {
+    background-color: DDEBFF;
+    }
+  
+    .fishImage { 
+        margin-left: 0px; 
+        
+    }    
+    
+    .fishTitle {
+        font-family: 'Inter';
+        margin-left: 26px;
+    
+    }
+    
+    h3 {
+        font-size: 22px !important;
+    }
+    
+    .SellerField {
+        font-size: 18px;
+    }
+    
+    .fishRightSide {
+        width: 200px;
+        }
+
+    h5 {
+        font-size: 15px !important;
+    }
+
+}
+  
+
+@media screen and (max-width: 600px) {
+
+
+    
+    .AquaBidIcon {
+        height: 70%;
+        margin-left: 25px;
+    }
+    
+    
+    .accountCircle {
+        width: 50px;
+        height: 50px;
+      }
+    
+    .accountImage {
+        height: 35px;
+        width: 35px;
+    }
+    
+    .sideIcons {
+        width: 19px;
+    }
+    
+    .iconPair {
+        margin-top: 17px;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .iconPair a { 
+        font-size: 10px;
+    }
+    
+    .TopOfFishBar { 
+        height: 87px;
+    }
+    
+    .textHolder { 
+        margin-left: 15px;
+    }
+    
+    h1 {
+        font-size: 24px !important;
+    }
+    
+    .NavSubTitle {
+        font-size: 11px;
+    }
+    
+    .filterButtonRight {
+        font-size: 8px !important;
+        --bs-btn-padding-x: 0.30rem !important;
+    }
+
+    .rightSide {
+        display: none;
+    }
+    
+
+    .Fish {
+    height: 130px;   
+    }
+
+    .fishRightSide {
+        margin-right: 0px;
+    }
+    
+    .fishImage { 
+        width: 100px; 
+        height: 100px; 
+        }    
+
+    
+    .FishTitle {
+        display: none;
+    }
+
+    .FishTitleMobile {
+        display: block;
+    }
+    
+    h3 {
+        font-size: 16px !important;
+    }
+    
+    .SellerField {
+        font-size: 10px !important;
+    }
+    
+    h5 {
+        font-size: 8px !important;
+       
+        }
+    
+  }
